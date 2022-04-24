@@ -1,0 +1,32 @@
+[0m2021.10.13 17:09:03 INFO  Started: Metals version 0.10.7 in workspace '/home/kamal/Documents/dev/gcp/terraform' for client Visual Studio Code 1.61.0.[0m
+[0m2021.10.13 17:09:20 INFO  time: initialize in 16s[0m
+[0m2021.10.13 17:09:31 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.13 17:09:31 WARN  no build tool detected in workspace '/home/kamal/Documents/dev/gcp/terraform'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.13 20:51:37 INFO  Started: Metals version 0.10.7 in workspace '/home/kamal/Documents/dev/gcp/terraform' for client Visual Studio Code 1.61.0.[0m
+[0m2021.10.13 20:51:48 INFO  time: initialize in 11s[0m
+[0m2021.10.13 20:51:53 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.13 20:51:53 WARN  no build tool detected in workspace '/home/kamal/Documents/dev/gcp/terraform'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.17 15:26:23 INFO  Started: Metals version 0.10.7 in workspace '/home/kamal/Documents/dev/gcp/terraform' for client Visual Studio Code 1.61.1.[0m
+[0m2021.10.17 15:26:37 INFO  time: initialize in 14s[0m
+[0m2021.10.17 15:26:42 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.17 15:26:42 WARN  no build tool detected in workspace '/home/kamal/Documents/dev/gcp/terraform'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.18 11:56:32 INFO  Started: Metals version 0.10.7 in workspace '/home/kamal/Documents/dev/gcp/terraform' for client Visual Studio Code 1.61.1.[0m
+[0m2021.10.18 11:56:51 INFO  time: initialize in 18s[0m
+[0m2021.10.18 11:56:59 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.18 11:56:59 WARN  no build tool detected in workspace '/home/kamal/Documents/dev/gcp/terraform'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.18 17:08:51 INFO  Started: Metals version 0.10.7 in workspace '/home/kamal/Documents/dev/gcp/terraform' for client Visual Studio Code 1.61.1.[0m
+[0m2021.10.18 17:09:08 INFO  time: initialize in 17s[0m
+[0m2021.10.18 17:09:18 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.18 17:09:18 WARN  no build tool detected in workspace '/home/kamal/Documents/dev/gcp/terraform'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.10.20 11:05:20 INFO  Started: Metals version 0.10.7 in workspace '/home/kamal/Documents/dev/gcp/terraform' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.20 11:05:32 INFO  time: initialize in 12s[0m
+[0m2021.10.20 11:05:37 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.20 11:05:37 WARN  no build tool detected in workspace '/home/kamal/Documents/dev/gcp/terraform'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.11.07 16:53:53 INFO  Started: Metals version 0.10.9 in workspace '/home/kamal/Documents/dev/gcp/terraform' for client Visual Studio Code 1.62.0.[0m
+[0m2021.11.07 16:54:03 INFO  time: initialize in 10s[0m
+[0m2021.11.07 16:54:07 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.07 16:54:07 WARN  no build tool detected in workspace '/home/kamal/Documents/dev/gcp/terraform'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.11.08 00:10:06 INFO  Started: Metals version 0.10.9 in workspace '/home/kamal/Documents/dev/gcp/terraform' for client Visual Studio Code 1.62.0.[0m
+[0m2021.11.08 00:10:20 INFO  time: initialize in 13s[0m
+[0m2021.11.08 00:10:24 WARN  Build server is not auto-connectable.[0m
+[0m2021.11.08 00:10:24 WARN  no build tool detected in workspace '/home/kamal/Documents/dev/gcp/terraform'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m

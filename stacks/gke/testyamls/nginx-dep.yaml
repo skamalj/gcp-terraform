@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx-dep
+  name: nginx-dep-zoneb
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-dep
+  template:
+    metadata:
+      labels:
+        app: nginx-dep
+      name: nginx-dep
+    spec:
+      nodeSelector:
+        topology.kubernetes.io/zone: "us-central1-b"
+      containers:
+      - image: nginxinc/nginx-unprivileged:1.16.1-alpine
+        name: nginx-dep
+        resources:
+          limits:
+            cpu: 250m
+            memory: 256Mi
+          requests:
+            cpu: 250m
+            memory: 256Mi 

@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: internal-ingress
+  annotations:
+    kubernetes.io/ingress.class: "gce-internal"
+spec:
+  defaultBackend:
+    service:
+      name: svc-ingress-nginx
+      port:
+        number: 80

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-ingress-nginx
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
+  labels:
+    app: nginx
+spec:
+  selector:
+    app: nginx
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
