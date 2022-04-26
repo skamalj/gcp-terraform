@@ -3,6 +3,7 @@ variable "service_account_name" {
 }
 variable "project_id" {
   type = string
+  default = null
 }
 variable "display_name" {
     type = string

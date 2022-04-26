@@ -16,7 +16,11 @@ variable "filename" {
 }
 variable "branch_name" {
   type = string
-  default = "master"
+  default = null
+}
+variable "tag_name" {
+  type = string
+  default = null
 }
 variable "repo_name" {
   type = string

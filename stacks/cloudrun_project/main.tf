@@ -39,6 +39,7 @@ module "customer_build_trigger" {
     filename = "customer/cloudbuild.yaml"
     source = "../../modules/cloudbuild_trigger"
     repo_name = "customer_repo"
+    tag_name = ".*"
     service_account_id = module.cloudbuild_sa.service_account.id
     depends_on = [
       module.customer_repo
@@ -58,7 +59,7 @@ module "cloudrun_subnet" {
   source = "../../modules/subnetwork"
   name = "cloudrun"
   ip_cidr_range  =  "10.0.1.0/28"
-  network_name = "default"
+  network_id = "https://www.googleapis.com/compute/v1/projects/gcdeveloper/global/networks/default"
 }
 
 resource "google_vpc_access_connector" "connector" {
@@ -72,7 +73,7 @@ resource "google_vpc_access_connector" "connector" {
 module "cloudrun_router" {
   source = "../../modules/cloud_router"
   name = "cloudrun-router"
-  network_name = "default"
+  network_id = "https://www.googleapis.com/compute/v1/projects/gcdeveloper/global/networks/default"
   asn = "64514"
   advertised_ip_ranges = [{
     range = "10.132.0.0/20"

@@ -18,6 +18,7 @@ resource "google_cloudbuild_trigger" "cloudbuild_trigger" {
     trigger_template {
       branch_name = var.branch_name
       repo_name   = var.repo_name
+      tag_name = var.tag_name
     }
 
     substitutions = var.substitutions
