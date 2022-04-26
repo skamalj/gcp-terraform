@@ -1,0 +1,5 @@
+roles=["roles/iam.serviceAccountUser", "roles/logging.logWriter",
+        "roles/storage.admin","roles/run.admin","roles/cloudbuild.builds.builder", 
+        "roles/vpcaccess.user","roles/compute.viewer"]
+region = "us-central1"
+
