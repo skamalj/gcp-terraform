@@ -23,6 +23,7 @@ resource "google_container_cluster" "gke_cluster" {
   }
   node_config {
     machine_type = "n2d-standard-2"
+    disk_size_gb = 20
     service_account = var.cluster_service_account
   }
 

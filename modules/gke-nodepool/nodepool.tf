@@ -19,6 +19,7 @@ resource "google_container_node_pool" "node_pool" {
   node_config {
     labels = var.node_pool_labels
     machine_type = var.machine_type
+    disk_size_gb = var.disk_size_gb
     service_account = var.service_account
   }
   
@@ -42,5 +43,10 @@ resource "google_container_node_pool" "node_pool" {
   upgrade_settings {
     max_surge = var.upgrade_max_surge
     max_unavailable = var.upgrade_max_unavailable
+  }
+  lifecycle {
+   ignore_changes = [
+    node_config.0.min_cpu_platform
+  ] 
   }
 }

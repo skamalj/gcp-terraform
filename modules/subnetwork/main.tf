@@ -34,6 +34,6 @@ resource "google_compute_subnetwork" "subnetwork" {
     }
   }
   lifecycle {
-    ignore_changes = ["secondary_ip_range"]
+    ignore_changes = [secondary_ip_range]
   }
 }

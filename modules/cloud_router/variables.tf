@@ -4,6 +4,9 @@ variable "name" {
 variable "network_id" {
   type = string
 }
+variable "region" {
+  
+}
 variable "asn" {
   type = string
   default = "64512"

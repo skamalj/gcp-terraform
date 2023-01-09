@@ -22,6 +22,7 @@ resource "google_compute_router_nat" "cloud_nat" {
   source_subnetwork_ip_ranges_to_nat = var.source_subnetwork_ip_ranges_to_nat
 
   router = var.router_name
+  region = var.region
   nat_ips = var.nat_ip_allocate_option == "MANUAL_ONLY" ? google_compute_address.nat_address[*].id : null
 
   dynamic "subnetwork" {

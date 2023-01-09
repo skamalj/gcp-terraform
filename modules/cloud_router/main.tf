@@ -1,5 +1,4 @@
 terraform {
-  experiments = [module_variable_optional_attrs]
   required_providers {
     google = {
       source = "hashicorp/google"
@@ -11,6 +10,7 @@ terraform {
 resource "google_compute_router" "router" {
   name    = var.name
   network = var.network_id
+  region = var.region
   dynamic "bgp" {
       for_each = try(var.asn,null) != null ? [1] : []
       content {

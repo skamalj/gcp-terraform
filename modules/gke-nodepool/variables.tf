@@ -11,6 +11,9 @@ variable "node_pool_labels" {
 variable "machine_type" {
   default = "n2d-standard-2"
 }
+variable "disk_size_gb" {
+  default = 20
+}
 variable "service_account" {
   default = null
 }

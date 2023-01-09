@@ -2,7 +2,6 @@
 variable "region" {}
 variable "zone" {}
 variable "project_id" {}
-variable "credentials_file" {}
 
 # Network Configuration
 variable "network_name" {}

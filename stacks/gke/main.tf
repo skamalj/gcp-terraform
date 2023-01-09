@@ -1,5 +1,5 @@
 terraform {
-  required_version = "1.1.7"
+  required_version = ">= 1.1.7"
   backend "gcs" {
     bucket = "terraform-state-skamalj"
     prefix = "stack/gke"
@@ -17,13 +17,11 @@ terraform {
 }
 
 provider "google" {
-  credentials = file(var.credentials_file)
   project     = var.project_id
   region      = var.region
   zone        = var.zone
 }
 provider "google-beta" {
-  credentials = file(var.credentials_file)
   project     = var.project_id
   region      = var.region
   zone        = var.zone
@@ -92,12 +90,14 @@ module "gke_router" {
   source = "../../modules/cloud_router"
   name = "gke-private-router"
   network_id = module.gke_network.network_id
+  region = var.region
 }
 
 module "gke_nat" {
   source = "../../modules/cloud_nat"
   name = "gke-private-nat"
   router_name = module.gke_router.router.name
+  region = var.region
 }
 
 module "gke-pool-1" {

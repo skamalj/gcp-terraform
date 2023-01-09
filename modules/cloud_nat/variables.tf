@@ -5,6 +5,9 @@ variable "nat_ip_allocate_option" {
   type = string
   default = "AUTO_ONLY"
 }
+variable "region" {
+  
+}
 variable "source_subnetwork_ip_ranges_to_nat" {
   type = string 
   default = "ALL_SUBNETWORKS_ALL_IP_RANGES"
